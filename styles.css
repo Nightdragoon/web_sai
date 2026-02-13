@@ -16,6 +16,12 @@
     --box-shadow: 0 10px 30px rgba(1, 28, 81, 0.15);
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -85,22 +91,7 @@ a {
 .btn:active::before {
     width: 300px;
 
-    .modal-panel {
-        position: relative;
-        /* Look & feel similar to servicio-card */
-        background-color: var(--color-gray-light);
-        border-radius: 12px;
-        padding: 28px;
-        width: 100%;
-        max-width: 720px;
-        box-shadow: var(--box-shadow);
-        /* subtle left accent like servicio cards */
-        border: 2px solid transparent;
-        border-left: 6px solid var(--color-accent);
-        transform: translateY(10px);
-        opacity: 0;
-        transition: transform 260ms cubic-bezier(.2, .9, .3, 1), opacity 260ms ease, box-shadow 220ms ease;
-    }
+   
 
     box-shadow: 0 12px 32px rgba(1, 28, 81, 0.25);
 }
